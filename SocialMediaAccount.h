@@ -8,6 +8,11 @@ class SocialMediaAccount{
 public:
     SocialMediaAccount();
     SocialMediaAccount(T user);
+    int getFollowerCount();
+    int getFollowedCount();
+    int setFollowerCount(int follCount);
+    int setFollowedCount(int foledCount);
+    const T& getHandler() {return handler;}
 private:
     T handler;
     int followerCount, followedCount;
