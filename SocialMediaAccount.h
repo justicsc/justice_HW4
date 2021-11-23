@@ -8,6 +8,11 @@ class SocialMediaAccount{
 public:
     SocialMediaAccount();
     SocialMediaAccount(T user);
+    T addFollower (T user);
+    T addFollowed (T user);
+    void displayFollowers();
+    void displayFollowed();
+
     int getFollowerCount();
     int getFollowedCount();
     int setFollowerCount(int follCount);
