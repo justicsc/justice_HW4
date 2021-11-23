@@ -9,6 +9,8 @@ public:
     Twitter();
     Twitter(T user);
     void RT();
+    int getRetweetCount();
+    int setRetweetCount(int RTCO);
 private:
     int retweetCount;
 
