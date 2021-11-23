@@ -34,14 +34,15 @@ int SocialMediaAccount<T>::setFollowedCount(int foledCount){
 
 template<class T>
 T addFollower (T user){
-   T followers[maxFollowers] = user;
+   T followers[maxFollowers] = {user};
    user++;
 };
 
 template<class T>
 T addFollowed (T user){
-    T followed[maxFollowed] =  user;
+    T followed[maxFollowed] = {user};
     user++;
+    return user;
 };
 template<class T>
 void SocialMediaAccount<T>::displayFollowers(){
